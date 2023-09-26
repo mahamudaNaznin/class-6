@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding:0;
+    outline:0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1100px;
+    margin: auto;
+    text-align: center;
+
+}
+ul,ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+nav{
+    background-color: green;
+    height: 90px;
+}
+nav .parent{
+    display: flex;
+    /* background: red; */
+    justify-content: center;
+}
+nav .parent li{
+  line-height: 90px;
+  margin: 0 15px;
+}
+nav .child{
+    background-color: #ccc;
+    margin-top: 100px;
+    visibility: hidden;
+    opacity: 0;
+    
+}
+nav .child li{
+    background-color: aquamarine;
+    border-bottom: 1px solid red;
+}
+nav .child li a{
+    color: #000;
+
+}
+nav .child-list:hover .child{
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0px;
+}
